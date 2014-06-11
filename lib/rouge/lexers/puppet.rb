@@ -30,8 +30,8 @@ module Rouge
         )
       end
 
-      id = /[a-z]\w*/
-      cap_id = /[A-Z]\w*/
+      id = /[a-z][\w\-]*/
+      cap_id = /[A-Z][\w\-]*/
       qualname = /(::)?(#{id}::)*\w+/
 
       state :whitespace do
